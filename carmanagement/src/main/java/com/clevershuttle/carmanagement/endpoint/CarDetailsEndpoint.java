@@ -21,18 +21,21 @@ public class CarDetailsEndpoint {
 
     @GetMapping()
     public CarDetailsResponse getCustomer( @PathVariable("uuid") String userId) {
+        logger.info("Fetching a new car detail info with userId: " , userId);
         return carManagementService.getCarDetails(userId);
     }
 
     @PutMapping()
     @ResponseStatus(HttpStatus.OK)
     public CarDetailsResponse putCustomer (@PathVariable("uuid") String userId, @RequestBody final CarDetailsRequest carDetailsrRequestValue) {
+        logger.info("UPdating a new car detail info with userId: " , userId);
         return carManagementService.updateCarDetails(userId, carDetailsrRequestValue);
     }
 
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
     public CarDetailsEntity postCustomer ( @PathVariable("uuid") String userId, @RequestBody final CarDetailsRequest carDetailsRequestValue) {
+        logger.info("Creating a new car detail info with userId: " , userId);
         return carManagementService.createCarDetails(userId, carDetailsRequestValue);
     }
 
