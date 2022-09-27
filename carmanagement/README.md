@@ -1,4 +1,7 @@
 # Exercises
 Hands on with the concepts
 
-Java -jar carmanagement-0.0.1-SNAPSHOT
+navigate to target folder of the project
+cd .\target\
+Run below command:
+Java -jar .\carmanagement-0.0.1-SNAPSHOT
