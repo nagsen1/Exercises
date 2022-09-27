@@ -35,7 +35,7 @@ public class DefaultCarManagementService implements CarManagementService{
     public CarDetailsResponse getCarDetails(String userId) {
             CarDetailsEntity carDetailsEntity = carDetailsRepository.findByUserId(userId);
             if (carDetailsEntity == null) {
-                logger.warn("Tried to find customer entry which doesn't exist in DB. Nonexistent customer uuid: [" + userId + "].");
+                logger.warn("Tried to find car entry which doesn't exist in DB. Nonexistent car uuid: [" + userId + "].");
                 throw new CarDetailsNotFoundException("Cannot find customer for : [" + userId + "].");
             }
             logger.info("Successfully retrieved car details from: [brandName=" + carDetailsEntity.getBrand() + ", licenseplate=" + carDetailsEntity.getLicensePlate() + ", created at =" + carDetailsEntity.getCreatedAt() + "].");
