@@ -1,0 +1,4 @@
+INSERT INTO car_data (id, user_id, brand_name, licenseplate, manufacturer, operation_city, status, createrAt, updatedAt)
+VALUES (1, '16978a6c-27a6-48f2-a865-147def8d092e', 'Audi', 'L-CS8877E', 'Folkaswagon LLP', 'Munich', 'Available', TO_TIMESTAMP('2011-07-02 06:14:00.742000000', 'YYYY-MM-DD HH24:MI:SS.FF'), TO_TIMESTAMP('2016-07-02 06:14:00.742000000', 'YYYY-MM-DD HH24:MI:SS.FF')),
+       (2, '7c2297b1-0f24-4a4d-8d9e-709e0c46254e', 'BMW', 'K-CS8877E', 'BMW LLP', 'Hamburg', 'maintenance',TO_TIMESTAMP('2008-07-02 06:14:00.742000000', 'YYYY-MM-DD HH24:MI:SS.FF'), TO_TIMESTAMP('2009-07-02 06:14:00.742000000', 'YYYY-MM-DD HH24:MI:SS.FF')),
+       (3, 'fb44755d-7c91-49c7-b742-0ecfb475e26e', 'Toyota', 'G-CS8877E', 'Toyota GMBH', 'Karlsruhe', ' out-of-service',TO_TIMESTAMP('2009-07-02 06:14:00.742000000', 'YYYY-MM-DD HH24:MI:SS.FF'), TO_TIMESTAMP('2012-07-02 06:14:00.742000000', 'YYYY-MM-DD HH24:MI:SS.FF'));

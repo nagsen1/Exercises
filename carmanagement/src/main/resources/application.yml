@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    username: admin
+    url: jdbc:h2:mem:cardb
+    driverClassName: org.h2.Driver
+    password: demo123
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+    ddl-auto: update
