@@ -27,6 +27,7 @@ public class GlobalExceptionHandler {
     })
     public ResponseEntity<ErrorResponse> handleNotFound(CarDetailsNotFoundException e) {
         logger.info(e.getMessage());
+        logger.info();
         return new ResponseEntity<>(new ErrorResponse(HttpStatus.NOT_FOUND.getReasonPhrase(), "Car details not Found."), HttpStatus.NOT_FOUND);
     }
 
